@@ -1,4 +1,5 @@
 package main
+
 // curl -d test=value http://localhost:18888
 
 import (
@@ -9,7 +10,7 @@ import (
 
 func main() {
 	values := url.Values{
-	"test": {"value"},
+		"test": {"value"},
 	}
 
 	resp, err := http.PostForm("http://localhost:18888", values)
@@ -18,4 +19,3 @@ func main() {
 	}
 	log.Println("Status:", resp.Status)
 }
-

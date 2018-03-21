@@ -1,11 +1,13 @@
 package main
+
 // curl -T main.go -H "Content-Type: text/plain" http://localhost:18888
 
 import (
 	"log"
 	"net/http"
-		"os"
+	"os"
 )
+
 func main() {
 	file, err := os.Open("5_Post_AnyContent.go")
 	if err != nil {
